@@ -21,7 +21,6 @@ class CommentsController < ApplicationController
     find_comment
 
     if @comment.update(comment_params)
-    # @comment.update_attributes(comment_params)
       redirect_to @post
     else
       render 'edit'
