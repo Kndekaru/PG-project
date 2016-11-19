@@ -1,0 +1,6 @@
+<p><strong><%= comment.reply %></strong></p>
+<p>by <%= comment.user.username %></p>
+<% if comment.user == current_user %>
+  <%= link_to "Edit Comment", edit_post_comment_path(@post, comment) %>
+  <%= link_to "Delete Comment", post_comment_path(@post, comment), :method => :delete %>
+<% end %>

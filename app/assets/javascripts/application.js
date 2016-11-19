@@ -13,3 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+
+    $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+    $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });

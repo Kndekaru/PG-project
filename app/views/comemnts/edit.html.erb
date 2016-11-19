@@ -1,0 +1,6 @@
+<div class="container">
+ <%= form_for([@post, @comment]) do |f| %>
+   Reply: <%= f.text_field :reply %>
+   <%= f.submit "Submit" %>
+ <% end %>
+</div>

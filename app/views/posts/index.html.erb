@@ -1,0 +1,8 @@
+<h1 align="center">COMMUNITY BOARD</h1>
+<div class="container">
+  <ul>
+    <% @posts.each do |post| %>
+      <li><%= link_to "#{post.title}", post %> by <%= post.user.username %></li>
+    <% end %>
+  </ul>
+</div>
